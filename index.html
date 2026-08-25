@@ -503,59 +503,377 @@
 </section>
     
     <!-- DATA -->
-    <section id="data" class="data-section">
+    <!-- CLIMATE DATA DASHBOARD -->
 
-        <div class="section-heading center">
+<section id="data" class="climate-dashboard">
 
-            <p class="label">04 — THE NUMBERS</p>
+    <div class="dashboard-heading">
 
-            <h2>
-                THE NUMBERS<br>
-                <span>TELL THE STORY.</span>
-            </h2>
+        <p class="label">06 — CLIMATE DATA</p>
+
+        <h2>
+            THE PLANET<br>
+            <span>BY THE NUMBERS.</span>
+        </h2>
+
+        <p>
+            Explore how key climate indicators have changed
+            over the years and discover where climate impacts
+            are being felt around the world.
+        </p>
+
+    </div>
+
+
+    <!-- YEAR SELECTOR -->
+
+    <div class="year-selector">
+
+        <button class="data-year active" data-year="2021">
+            2021
+        </button>
+
+        <button class="data-year" data-year="2022">
+            2022
+        </button>
+
+        <button class="data-year" data-year="2023">
+            2023
+        </button>
+
+        <button class="data-year" data-year="2024">
+            2024
+        </button>
+
+        <button class="data-year" data-year="2025">
+            2025
+        </button>
+
+    </div>
+
+
+    <!-- YEAR SNAPSHOT -->
+
+    <div class="data-snapshot">
+
+        <div>
+            <span>SELECTED YEAR</span>
+
+            <strong id="dashboardYear">
+                2021
+            </strong>
+        </div>
+
+        <div>
+            <span>GLOBAL TEMPERATURE</span>
+
+            <strong>
+                <span id="dashboardTemperature">1.09</span>°C
+            </strong>
+        </div>
+
+        <div>
+            <span>CO₂ CONCENTRATION</span>
+
+            <strong>
+                <span id="dashboardCO2">416</span> ppm
+            </strong>
+        </div>
+
+        <div>
+            <span>SEA LEVEL</span>
+
+            <strong>
+                <span id="dashboardSea">88</span> mm
+            </strong>
+        </div>
+
+    </div>
+
+
+    <!-- GRAPH -->
+
+    <div class="dashboard-grid">
+
+        <div class="graph-card">
+
+            <div class="graph-header">
+
+                <div>
+                    <p class="mini-label">
+                        GLOBAL TEMPERATURE
+                    </p>
+
+                    <h3>
+                        TEMPERATURE TREND
+                    </h3>
+                </div>
+
+                <span>
+                    2021 — 2025
+                </span>
+
+            </div>
+
+            <div class="chart-container">
+
+                <canvas id="temperatureChart"></canvas>
+
+            </div>
 
         </div>
 
 
-        <div class="stats">
+        <!-- CO2 GRAPH -->
 
-            <div class="stat">
-                <strong class="counter" data-target="1.5">0</strong>
-                <span>°C</span>
+        <div class="graph-card">
 
-                <p>
-                    Approximate warming above
-                    the pre-industrial average
-                    reached in recent years.
-                </p>
+            <div class="graph-header">
+
+                <div>
+                    <p class="mini-label">
+                        ATMOSPHERE
+                    </p>
+
+                    <h3>
+                        CO₂ TREND
+                    </h3>
+                </div>
+
+                <span>
+                    ppm
+                </span>
+
             </div>
 
+            <div class="chart-container">
 
-            <div class="stat">
-                <strong>CO₂</strong>
+                <canvas id="co2Chart"></canvas>
 
-                <p>
-                    Carbon dioxide is one of the major
-                    greenhouse gases driving human-caused
-                    climate change.
-                </p>
-            </div>
-
-
-            <div class="stat">
-                <strong>NOW</strong>
-
-                <p>
-                    Climate action is not only about
-                    the future. Decisions made today matter.
-                </p>
             </div>
 
         </div>
 
-    </section>
+    </div>
 
 
+    <!-- WORLD MAP -->
+
+    <div class="map-card">
+
+        <div class="map-header">
+
+            <div>
+
+                <p class="mini-label">
+                    GLOBAL IMPACT
+                </p>
+
+                <h3>
+                    WHERE THE PLANET IS CHANGING
+                </h3>
+
+            </div>
+
+            <span id="mapYear">
+                2021
+            </span>
+
+        </div>
+
+
+        <div class="world-map">
+
+            <div class="map-region north-america">
+                <span>🌡️</span>
+            </div>
+
+            <div class="map-region south-america">
+                <span>🔥</span>
+            </div>
+
+            <div class="map-region europe">
+                <span>🌡️</span>
+            </div>
+
+            <div class="map-region africa">
+                <span>☀️</span>
+            </div>
+
+            <div class="map-region asia">
+                <span>🌡️</span>
+            </div>
+
+            <div class="map-region australia">
+                <span>🌊</span>
+            </div>
+
+        </div>
+
+
+        <div class="map-legend">
+
+            <div>
+                <span class="legend-dot heat"></span>
+                Extreme Heat
+            </div>
+
+            <div>
+                <span class="legend-dot drought"></span>
+                Drought Risk
+            </div>
+
+            <div>
+                <span class="legend-dot flood"></span>
+                Flood / Sea Level
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SEA LEVEL GRAPH -->
+
+    <div class="graph-card full-width">
+
+        <div class="graph-header">
+
+            <div>
+
+                <p class="mini-label">
+                    OCEANS
+                </p>
+
+                <h3>
+                    GLOBAL SEA LEVEL
+                </h3>
+
+            </div>
+
+            <span>
+                MILLIMETRES
+            </span>
+
+        </div>
+
+        <div class="chart-container large">
+
+            <canvas id="seaChart"></canvas>
+
+        </div>
+
+    </div>
+
+
+    <!-- TIMELINE -->
+
+    <div class="climate-timeline">
+
+        <p class="mini-label">
+            CLIMATE TIMELINE
+        </p>
+
+        <h3>
+            THE TREND IS THE WARNING.
+        </h3>
+
+
+        <div class="timeline-track">
+
+            <div class="timeline-point">
+
+                <strong>2021</strong>
+
+                <span>🌡️</span>
+
+                <p>
+                    Rising global temperatures
+                </p>
+
+            </div>
+
+
+            <div class="timeline-point">
+
+                <strong>2022</strong>
+
+                <span>🌊</span>
+
+                <p>
+                    Increasing climate impacts
+                </p>
+
+            </div>
+
+
+            <div class="timeline-point">
+
+                <strong>2023</strong>
+
+                <span>🔥</span>
+
+                <p>
+                    Exceptional global heat
+                </p>
+
+            </div>
+
+
+            <div class="timeline-point">
+
+                <strong>2024</strong>
+
+                <span>🌍</span>
+
+                <p>
+                    Continued warming
+                </p>
+
+            </div>
+
+
+            <div class="timeline-point">
+
+                <strong>2025</strong>
+
+                <span>⚠️</span>
+
+                <p>
+                    Climate action remains urgent
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MESSAGE -->
+
+    <div class="data-message">
+
+        <p class="mini-label">
+            WHY THE DATA MATTERS
+        </p>
+
+        <h3>
+            NUMBERS SHOW<br>
+            <span>WHAT IS CHANGING.</span>
+        </h3>
+
+        <p>
+            Every measurement represents a real change in
+            Earth's atmosphere, oceans and ecosystems.
+            Understanding the data helps us understand
+            why action matters.
+        </p>
+
+    </div>
+
+</section>
+    
     <!-- SUSTAINABILITY -->
     <section id="solutions" class="section">
 
