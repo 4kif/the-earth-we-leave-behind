@@ -1803,3 +1803,320 @@ footer p {
     }
 
 }
+
+/* =================================
+   OUR TEAM
+================================= */
+
+.team-section {
+
+    min-height: 100vh;
+
+    padding: 120px 8%;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #123b25,
+            #050b08 65%
+        );
+
+}
+
+
+/* HEADER */
+
+.team-header {
+
+    margin-bottom: 50px;
+
+}
+
+
+.team-header h2 {
+
+    font-size: 65px;
+
+    line-height: 0.95;
+
+    margin-bottom: 20px;
+
+}
+
+
+.team-header > p:not(.small-title) {
+
+    color: #9ca9a1;
+
+    max-width: 500px;
+
+    line-height: 1.7;
+
+}
+
+
+/* SLIDER */
+
+.team-slider {
+
+    width: 100%;
+
+    overflow: hidden;
+
+}
+
+
+.team-track {
+
+    display: flex;
+
+    gap: 30px;
+
+    transition:
+        transform 0.6s
+        cubic-bezier(.77,0,.18,1);
+
+}
+
+
+/* TEAM CARD */
+
+.team-card {
+
+    min-width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 30px;
+
+    background:
+        rgba(12, 24, 18, 0.75);
+
+    border:
+        1px solid #244b34;
+
+    border-radius: 30px;
+
+    backdrop-filter: blur(15px);
+
+}
+
+
+/* PHOTO */
+
+.team-photo {
+
+    width: 420px;
+
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    flex-shrink: 0;
+
+}
+
+
+.team-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.6s;
+
+}
+
+
+.team-card:hover
+.team-photo img {
+
+    transform: scale(1.05);
+
+}
+
+
+/* INFORMATION */
+
+.team-info span {
+
+    color: #7cff9b;
+
+    letter-spacing: 3px;
+
+    font-size: 12px;
+
+}
+
+
+.team-info h3 {
+
+    font-size: 55px;
+
+    margin: 20px 0 10px;
+
+}
+
+
+.team-info p {
+
+    color: #9ca9a1;
+
+    font-size: 18px;
+
+}
+
+
+/* CONTROLS */
+
+.team-controls {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin-top: 35px;
+
+}
+
+
+/* ARROW BUTTON */
+
+.team-controls button {
+
+    width: 50px;
+
+    height: 50px;
+
+    padding: 0;
+
+    margin: 0;
+
+    border:
+        1px solid #315b40;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 20px;
+
+}
+
+
+.team-controls button:hover {
+
+    background: #7cff9b;
+
+    color: #06110d;
+
+}
+
+
+/* DOTS */
+
+.team-dots {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.dot {
+
+    width: 8px;
+
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #34473b;
+
+    transition: 0.3s;
+
+}
+
+
+.dot.active {
+
+    width: 25px;
+
+    border-radius: 10px;
+
+    background: #7cff9b;
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 768px) {
+
+    .team-section {
+
+        padding: 100px 6%;
+
+    }
+
+
+    .team-header h2 {
+
+        font-size: 45px;
+
+    }
+
+
+    .team-card {
+
+        flex-direction: column;
+
+        gap: 30px;
+
+        padding: 20px;
+
+    }
+
+
+    .team-photo {
+
+        width: 100%;
+
+        height: 350px;
+
+    }
+
+
+    .team-info {
+
+        width: 100%;
+
+        padding-bottom: 15px;
+
+    }
+
+
+    .team-info h3 {
+
+        font-size: 38px;
+
+    }
+
+}
