@@ -585,3 +585,81 @@ if (seaCanvas && typeof Chart !== "undefined") {
     });
 
 }
+
+/* =================================
+   OUR TEAM SLIDER
+================================= */
+
+let currentTeam = 0;
+
+
+const teamTrack =
+    document.querySelector(".team-track");
+
+
+const teamCards =
+    document.querySelectorAll(".team-card");
+
+
+const dots =
+    document.querySelectorAll(".dot");
+
+
+function updateTeam() {
+
+    teamTrack.style.transform =
+        `translateX(-${currentTeam * 100}%)`;
+
+
+    dots.forEach(
+        (dot, index) => {
+
+            dot.classList.toggle(
+                "active",
+                index === currentTeam
+            );
+
+        }
+    );
+
+}
+
+
+function nextTeam() {
+
+    if (
+        currentTeam <
+        teamCards.length - 1
+    ) {
+
+        currentTeam++;
+
+    } else {
+
+        currentTeam = 0;
+
+    }
+
+
+    updateTeam();
+
+}
+
+
+function previousTeam() {
+
+    if (currentTeam > 0) {
+
+        currentTeam--;
+
+    } else {
+
+        currentTeam =
+            teamCards.length - 1;
+
+    }
+
+
+    updateTeam();
+
+}
