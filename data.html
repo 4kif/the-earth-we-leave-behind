@@ -1,1 +1,336 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Climate Data | The Earth We Leave Behind</title>
+
+    <link rel="stylesheet" href="data.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <a href="index.html" class="logo">
+            🌍 EARTH<span>.</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="index.html#climate">CLIMATE</a>
+            <a href="index.html#causes">CAUSES</a>
+            <a href="index.html#effects">EFFECTS</a>
+            <a href="index.html#sustainability">SUSTAINABILITY</a>
+            <a href="data.html" class="active">DATA BY YEAR</a>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="label">CLIMATE DATA</p>
+
+            <h1>
+                THE PLANET<br>
+                <span>BY THE NUMBERS.</span>
+            </h1>
+
+            <p class="hero-text">
+                Explore how key climate indicators have changed
+                across different years.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- YEAR SELECTOR -->
+
+    <section class="year-section">
+
+        <p class="label">SELECT YEAR</p>
+
+        <div class="year-buttons">
+
+            <button class="year-btn active" data-year="2021">2021</button>
+            <button class="year-btn" data-year="2022">2022</button>
+            <button class="year-btn" data-year="2023">2023</button>
+            <button class="year-btn" data-year="2024">2024</button>
+            <button class="year-btn" data-year="2025">2025</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- DATA -->
+
+    <section class="data-section">
+
+        <div class="section-heading">
+
+            <p class="label">
+                CLIMATE INDICATORS — <span id="selected-year">2021</span>
+            </p>
+
+            <h2>
+                EARTH'S<br>
+                <span>VITAL SIGNS.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="data-grid">
+
+
+            <!-- TEMPERATURE -->
+
+            <div class="data-card">
+
+                <div class="icon">🌡️</div>
+
+                <p class="data-title">
+                    GLOBAL TEMPERATURE
+                </p>
+
+                <h3>
+                    <span id="temperature">1.09</span>°C
+                </h3>
+
+                <p>
+                    Approximate global temperature anomaly
+                    compared with the pre-industrial period.
+                </p>
+
+                <span class="trend">
+                    ▲ CLIMATE WARMING
+                </span>
+
+            </div>
+
+
+            <!-- CO2 -->
+
+            <div class="data-card">
+
+                <div class="icon">💨</div>
+
+                <p class="data-title">
+                    ATMOSPHERIC CO₂
+                </p>
+
+                <h3>
+                    <span id="co2">416</span>
+                    <small>ppm</small>
+                </h3>
+
+                <p>
+                    Atmospheric carbon dioxide concentration
+                    measured in parts per million.
+                </p>
+
+                <span class="trend">
+                    ▲ INCREASING
+                </span>
+
+            </div>
+
+
+            <!-- SEA LEVEL -->
+
+            <div class="data-card">
+
+                <div class="icon">🌊</div>
+
+                <p class="data-title">
+                    SEA LEVEL
+                </p>
+
+                <h3>
+                    <span id="seaLevel">88</span>
+                    <small>mm</small>
+                </h3>
+
+                <p>
+                    Approximate global mean sea-level rise
+                    relative to a historical reference.
+                </p>
+
+                <span class="trend">
+                    ▲ RISING
+                </span>
+
+            </div>
+
+
+            <!-- ICE -->
+
+            <div class="data-card">
+
+                <div class="icon">🧊</div>
+
+                <p class="data-title">
+                    ARCTIC SEA ICE
+                </p>
+
+                <h3>
+                    <span id="ice">4.72</span>
+                    <small>million km²</small>
+                </h3>
+
+                <p>
+                    Approximate Arctic sea ice minimum
+                    for the selected year.
+                </p>
+
+                <span class="trend warning">
+                    ▼ DECLINING
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TIMELINE -->
+
+    <section class="timeline-section">
+
+        <p class="label">
+            CLIMATE TIMELINE
+        </p>
+
+        <h2>
+            THE TREND IS<br>
+            <span>THE WARNING.</span>
+        </h2>
+
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="year">2021</div>
+
+                <div>
+                    <h3>RISING TEMPERATURES</h3>
+                    <p>
+                        Global temperatures and greenhouse gas
+                        concentrations remained elevated.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="year">2022</div>
+
+                <div>
+                    <h3>CLIMATE EXTREMES</h3>
+                    <p>
+                        Extreme heat, droughts and other climate
+                        hazards continued to affect communities.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="year">2023</div>
+
+                <div>
+                    <h3>EXCEPTIONAL WARMING</h3>
+                    <p>
+                        Global temperatures reached exceptionally
+                        high levels.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="year">2024</div>
+
+                <div>
+                    <h3>RECORD HEAT</h3>
+                    <p>
+                        Climate monitoring showed continued
+                        warming and increasing climate risks.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="year">2025</div>
+
+                <div>
+                    <h3>THE STORY CONTINUES</h3>
+                    <p>
+                        Continued monitoring highlights the need
+                        for stronger climate action.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MESSAGE -->
+
+    <section class="final-section">
+
+        <p class="label">
+            WHY THE DATA MATTERS
+        </p>
+
+        <h2>
+            NUMBERS SHOW<br>
+            <span>WHAT IS CHANGING.</span>
+        </h2>
+
+        <p>
+            Understanding climate data helps us recognise
+            environmental changes and the importance of
+            sustainable action.
+        </p>
+
+        <a href="index.html#action" class="button">
+            TAKE ACTION →
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 THE EARTH WE LEAVE BEHIND
+        </p>
+
+    </footer>
+
+
+    <script src="data.js"></script>
+
+</body>
+
+</html>
