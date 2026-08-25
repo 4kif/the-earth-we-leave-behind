@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080b09;
+    color: white;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    height: 80px;
+    padding: 0 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #303630;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav span {
+    color: #8ccf63;
+}
+
+nav div {
+    display: flex;
+    gap: 25px;
+}
+
+nav div a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+nav div a:hover {
+    color: #8ccf63;
+}
+
+
+/* HERO */
+
+.hero {
+    padding: 130px 8%;
+
+    min-height: 65vh;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.8)
+        ),
+        url("https://images.unsplash.com/photo-1473445361085-b9a07f55608b?auto=format&fit=crop&w=2000&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero p:first-child {
+    color: #8ccf63;
+
+    letter-spacing: 4px;
+
+    font-size: 11px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 8vw, 100px);
+
+    line-height: 0.9;
+
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    color: #8ccf63;
+}
+
+.hero p:last-child {
+    color: #aaa;
+
+    max-width: 500px;
+
+    line-height: 1.7;
+}
+
+
+/* YEARS */
+
+.years {
+    padding: 70px 8%;
+
+    border-bottom: 1px solid #303630;
+}
+
+.years h2 {
+    margin-bottom: 25px;
+
+    font-size: 15px;
+
+    letter-spacing: 2px;
+}
+
+.year-btn {
+    padding: 14px 25px;
+
+    margin-right: 8px;
+    margin-bottom: 8px;
+
+    border: 1px solid #444;
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.year-btn:hover {
+    border-color: #8ccf63;
+}
+
+.year-btn.active {
+    background: #8ccf63;
+
+    color: black;
+
+    border-color: #8ccf63;
+}
+
+
+/* DATA */
+
+.data {
+    padding: 100px 8%;
+
+    background: #f1f3ed;
+
+    color: #101510;
+}
+
+.data > h2 {
+    font-size: 45px;
+
+    margin-bottom: 50px;
+}
+
+.data > h2 span {
+    color: #6da54d;
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.card {
+    padding: 30px;
+
+    min-height: 300px;
+
+    border: 1px solid #d2d8d0;
+
+    background: #fafbf8;
+}
+
+.card h3 {
+    font-size: 13px;
+
+    margin-bottom: 50px;
+}
+
+.card strong {
+    font-size: 45px;
+}
+
+.card small {
+    color: #777;
+}
+
+.card p {
+    color: #777;
+
+    margin-top: 20px;
+
+    line-height: 1.6;
+
+    font-size: 13px;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 40px;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 11px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    nav div {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .data > h2 {
+        font-size: 30px;
+    }
+
+}
