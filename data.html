@@ -1,1 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Climate Data | The Earth We Leave Behind</title>
+
+    <link rel="stylesheet" href="data.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="index.html" class="logo">
+            🌍 EARTH<span>.</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">← Back to Home</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="data-hero">
+
+        <p class="label">LIVE CLIMATE OVERVIEW</p>
+
+        <h1>
+            THE PLANET<br>
+            <span>BY THE NUMBERS.</span>
+        </h1>
+
+        <p>
+            Explore climate indicators across different years and
+            see how our changing planet can be measured through data.
+        </p>
+
+    </section>
+
+
+    <!-- YEAR SELECTOR -->
+
+    <section class="year-section">
+
+        <p class="label">SELECT A YEAR</p>
+
+        <div class="year-selector">
+
+            <button class="year-btn active" data-year="2021">2021</button>
+            <button class="year-btn" data-year="2022">2022</button>
+            <button class="year-btn" data-year="2023">2023</button>
+            <button class="year-btn" data-year="2024">2024</button>
+            <button class="year-btn" data-year="2025">2025</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- DATA CARDS -->
+
+    <section class="dashboard">
+
+        <div class="dashboard-title">
+
+            <p class="label">
+                CLIMATE DATA — <span id="selected-year">2021</span>
+            </p>
+
+            <h2>
+                EARTH'S<br>
+                <span>VITAL SIGNS.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="data-grid">
+
+
+            <!-- TEMPERATURE -->
+
+            <div class="data-card">
+
+                <div class="data-icon">🌡️</div>
+
+                <p class="data-title">
+                    GLOBAL TEMPERATURE
+                </p>
+
+                <h3>
+                    <span id="temperature">1.09</span>°C
+                </h3>
+
+                <p class="data-description">
+                    Approximate temperature anomaly compared
+                    with the pre-industrial period.
+                </p>
+
+                <div class="trend">
+                    ▲ ABOVE HISTORICAL AVERAGE
+                </div>
+
+            </div>
+
+
+            <!-- CO2 -->
+
+            <div class="data-card">
+
+                <div class="data-icon">💨</div>
+
+                <p class="data-title">
+                    ATMOSPHERIC CO₂
+                </p>
+
+                <h3>
+                    <span id="co2">416</span>
+                    <small>ppm</small>
+                </h3>
+
+                <p class="data-description">
+                    Atmospheric carbon dioxide concentration
+                    measured in parts per million.
+                </p>
+
+                <div class="trend">
+                    ▲ INCREASING
+                </div>
+
+            </div>
+
+
+            <!-- SEA LEVEL -->
+
+            <div class="data-card">
+
+                <div class="data-icon">🌊</div>
+
+                <p class="data-title">
+                    SEA LEVEL RISE
+                </p>
+
+                <h3>
+                    <span id="sea-level">88</span>
+                    <small>mm</small>
+                </h3>
+
+                <p class="data-description">
+                    Approximate sea-level change relative
+                    to the selected reference period.
+                </p>
+
+                <div class="trend">
+                    ▲ RISING
+                </div>
+
+            </div>
+
+
+            <!-- ICE -->
+
+            <div class="data-card">
+
+                <div class="data-icon">🧊</div>
+
+                <p class="data-title">
+                    ARCTIC SEA ICE
+                </p>
+
+                <h3>
+                    <span id="ice">4.72</span>
+                    <small>million km²</small>
+                </h3>
+
+                <p class="data-description">
+                    Approximate Arctic sea ice minimum
+                    during the selected year.
+                </p>
+
+                <div class="trend warning">
+                    ▼ DECLINING
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TIMELINE -->
+
+    <section class="timeline-section">
+
+        <p class="label">
+            YEARLY CLIMATE PROGRESSION
+        </p>
+
+        <h2>
+            THE TREND IS<br>
+            <span>THE WARNING.</span>
+        </h2>
+
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <span>2021</span>
+                <div class="timeline-line"></div>
+                <p>Rising temperatures and greenhouse gas concentrations continued.</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>2022</span>
+                <div class="timeline-line"></div>
+                <p>Climate indicators remained at historically high levels.</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>2023</span>
+                <div class="timeline-line"></div>
+                <p>Global temperatures reached exceptional levels.</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>2024</span>
+                <div class="timeline-line"></div>
+                <p>Record-breaking heat highlighted the accelerating climate crisis.</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>2025</span>
+                <div class="timeline-line"></div>
+                <p>Climate monitoring continued to show the importance of urgent action.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL MESSAGE -->
+
+    <section class="data-final">
+
+        <p class="label">WHAT DOES THE DATA MEAN?</p>
+
+        <h2>
+            NUMBERS DON'T<br>
+            <span>FEEL THE FUTURE.</span>
+        </h2>
+
+        <p>
+            But the people, ecosystems and generations living
+            through the consequences will.
+        </p>
+
+        <a href="index.html#action" class="action-btn">
+            TAKE ACTION →
+        </a>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 THE EARTH WE LEAVE BEHIND</p>
+
+    </footer>
+
+
+    <script src="data.js"></script>
+
+</body>
+
+</html>
